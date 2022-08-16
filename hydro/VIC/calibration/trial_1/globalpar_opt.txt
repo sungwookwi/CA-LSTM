@@ -1,0 +1,89 @@
+SOIL          G:/CA-LSTM/VIC_GA/calibration_pool/vicga_opt/soilpar_opt.txt
+RESULT_DIR          G:/CA-LSTM/VIC_GA/calibration_pool/vic_out_ext/
+STARTYEAR	1987
+STARTMONTH	10
+STARTDAY	1
+ENDYEAR	2013
+ENDMONTH	9
+ENDDAY	30
+MAX_SNOW_TEMP	0.5
+MIN_RAIN_TEMP	-0.5
+OUT_STEP	24
+N_OUTFILES     1
+OUTFILE        vic     9
+OUTVAR         OUT_RUNOFF
+OUTVAR         OUT_BASEFLOW
+OUTVAR         OUT_PREC
+OUTVAR         OUT_EVAP
+OUTVAR         OUT_EVAP_BARE
+OUTVAR         OUT_EVAP_CANOP
+OUTVAR         OUT_TRANSP_VEG
+OUTVAR         OUT_SUB_CANOP
+OUTVAR         OUT_SUB_SNOW
+#############################################################################
+ 
+NLAYER         3
+NODES          10
+TIME_STEP      24
+SNOW_STEP      6
+STARTHOUR      0
+ 
+FULL_ENERGY           FALSE
+CLOSE_ENERGY          FALSE
+ 
+FROZEN_SOIL           FALSE
+QUICK_FLUX            TRUE
+ 
+SNOW_DENSITY          DENS_BRAS  
+BLOWING               FALSE
+COMPUTE_TREELINE      FALSE       
+CORRPREC              FALSE
+SPATIAL_SNOW          FALSE
+SNOW_BAND             1
+ 
+FORCING1              E:/StochasticWatershedModeling/VIC/hru_meteo/vic/meteo_
+FORCE_FORMAT          ASCII 
+FORCE_ENDIAN          LITTLE
+N_TYPES               7
+FORCE_TYPE            SKIP      
+FORCE_TYPE            SKIP      
+FORCE_TYPE            SKIP      
+FORCE_TYPE            PREC      
+FORCE_TYPE            TMAX      
+FORCE_TYPE            TMIN      
+FORCE_TYPE            WIND      
+FORCE_DT              24
+FORCEYEAR             1950
+FORCEMONTH            1
+FORCEDAY              1
+FORCEHOUR             0
+GRID_DECIMAL          5
+WIND_H                10.0
+MEASURE_H             2.0
+ALMA_INPUT            FALSE
+ 
+VEGLIB                E:/StochasticWatershedModeling/VIC/cdec_watershed/veglib.LDAS
+VEGPARAM              G:/CA-LSTM/VIC_GA/vegepar_SierraNevada.txt
+BASEFLOW              ARNO        
+VEGLIB_VEGCOVER       FALSE
+VEGPARAM_LAI          FALSE
+VEGPARAM_ALB          FALSE
+VEGPARAM_VEGCOVER     FALSE
+LAI_SRC               FROM_VEGLIB  
+ALB_SRC               FROM_VEGLIB  
+VEGCOVER_SRC          FROM_VEGLIB  
+JULY_TAVG_SUPPLIED    FALSE
+ORGANIC_FRACT         FALSE
+ROOT_ZONES            3
+ 
+ROUTE                 G:/CA-LSTM/VIC_GA/calibration_pool/vicga_opt/routpar_opt_basin1.txt
+ROUTE_OUTFILE         G:/CA-LSTM/VIC_GA/calibration_pool/simflow_SHA_opt_par 
+
+ 
+SKIPYEAR              0
+COMPRESS              FALSE
+BINARY_OUTPUT         FALSE
+ALMA_OUTPUT           FALSE
+MOISTFRACT            FALSE
+PRT_HEADER            FALSE
+PRT_SNOW_BAND         FALSE

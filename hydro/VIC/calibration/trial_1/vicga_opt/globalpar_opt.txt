@@ -1,0 +1,83 @@
+SOIL          /home/swi_umass_edu/vic_ga/sn_ca/calibration_pool/soilparam_file/soilparam_44.txt
+RESULT_DIR          /home/swi_umass_edu/vic_ga/sn_ca/calibration_pool/vic_output/vic_file_44/
+STARTYEAR	1987
+STARTMONTH	10
+STARTDAY	1
+ENDYEAR	2003
+ENDMONTH	9
+ENDDAY	30
+MAX_SNOW_TEMP	0.500000
+MIN_RAIN_TEMP	-0.500000
+OUT_STEP	24
+N_OUTFILES     1
+OUTFILE        vic     2
+OUTVAR         OUT_RUNOFF
+OUTVAR         OUT_BASEFLOW
+#############################################################################
+ 
+NLAYER         3
+NODES          10
+TIME_STEP      24
+SNOW_STEP      6
+STARTHOUR      0
+ 
+FULL_ENERGY           FALSE
+CLOSE_ENERGY          FALSE
+ 
+FROZEN_SOIL           FALSE
+QUICK_FLUX            TRUE
+ 
+SNOW_DENSITY          DENS_BRAS  
+BLOWING               FALSE
+COMPUTE_TREELINE      FALSE       
+CORRPREC              FALSE
+SPATIAL_SNOW          FALSE
+SNOW_BAND             1
+ 
+FORCING1              /home/swi_umass_edu/vic_ga/sn_ca/hru_meteo/meteo_
+FORCE_FORMAT          ASCII 
+FORCE_ENDIAN          LITTLE
+N_TYPES               7
+FORCE_TYPE            SKIP      
+FORCE_TYPE            SKIP      
+FORCE_TYPE            SKIP      
+FORCE_TYPE            PREC      
+FORCE_TYPE            TMAX      
+FORCE_TYPE            TMIN      
+FORCE_TYPE            WIND      
+FORCE_DT              24
+FORCEYEAR             1950
+FORCEMONTH            1
+FORCEDAY              1
+FORCEHOUR             0
+GRID_DECIMAL          5
+WIND_H                10.0
+MEASURE_H             2.0
+ALMA_INPUT            FALSE
+ 
+VEGLIB                /home/swi_umass_edu/vic_ga/sn_ca/veglib.LDAS
+VEGPARAM              /home/swi_umass_edu/vic_ga/sn_ca/vegepar_SierraNevada.txt
+BASEFLOW              ARNO        
+VEGLIB_VEGCOVER       FALSE
+VEGPARAM_LAI          FALSE
+VEGPARAM_ALB          FALSE
+VEGPARAM_VEGCOVER     FALSE
+LAI_SRC               FROM_VEGLIB  
+ALB_SRC               FROM_VEGLIB  
+VEGCOVER_SRC          FROM_VEGLIB  
+JULY_TAVG_SUPPLIED    FALSE
+ORGANIC_FRACT         FALSE
+ROOT_ZONES            3
+ 
+ROUTE                 /home/swi_umass_edu/vic_ga/sn_ca/routpar_FOL_hru.txt
+ROUTE_OUTFILE         /home/swi_umass_edu/vic_ga/sn_ca/simflow_FOL
+ 
+
+ 
+SKIPYEAR              0
+COMPRESS              FALSE
+BINARY_OUTPUT         FALSE
+ALMA_OUTPUT           FALSE
+MOISTFRACT            FALSE
+PRT_HEADER            FALSE
+PRT_SNOW_BAND         FALSE
